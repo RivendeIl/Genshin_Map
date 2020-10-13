@@ -177,7 +177,7 @@ function getIconInfo(Name) {
 		case "ST": { //神瞳
 			var icon_base = L.Icon.extend({
 				options: {
-					iconSize: [24, 24], // size of the icon
+					iconSize: [40, 40], // size of the icon
 					shadowSize: [50, 64], // size of the shadow
 					iconAnchor: [12, 12], // point of the icon which will correspond to marker's location
 					shadowAnchor: [4, 62], // the same for the shadow
@@ -450,7 +450,7 @@ function MarkPoint(element) {
 
 	var doneUrl = newValue ? "_done" : ""
 	if (layerNumber == 0 || layerNumber == 1) {
-		var iconUrl = "./imgs/icon_" + layerNumber + doneUrl + ".svg";
+		var iconUrl = "./imgs/icon_" + layerNumber + doneUrl + ".png";
 	} else {
 		var iconUrl = "./imgs/icon_" + layerNumber + doneUrl + ".png";
 	}
@@ -501,7 +501,7 @@ for (let i = 0; i < typearray.length; i++) {
 			}
 			var doneUrl = markedFlag ? "_done" : ""
 			if (i == 0 || i == 1) {
-				var iconUrl = "./imgs/icon_" + i + doneUrl + ".svg";
+				var iconUrl = "./imgs/icon_" + i + doneUrl + ".png";
 			} else {
 				var iconUrl = "./imgs/icon_" + i + doneUrl + ".png";
 			}
